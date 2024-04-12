@@ -21,6 +21,7 @@ let hard = false
 let history = []
 let history_pointer = -1
 let from_input = true
+//test
 
 function App() {
 	//main grid
