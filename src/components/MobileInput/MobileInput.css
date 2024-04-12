@@ -1,0 +1,54 @@
+.input__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+}
+
+.input__bg{
+    display: none;
+    width: 100vw;
+    justify-content: center;
+    background-color: rgb(46, 46, 46);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.input__numbers,.input__undo{
+    display: flex;
+    grid-gap: 5px;
+}
+
+.input__undo{
+    margin: 10px;
+}
+
+.undo.sqr,.redo.sqr{
+    cursor: pointer;
+}
+
+.numbers.sqr:active,.undo.sqr:active,.redo.sqr:active{
+    background-color: rgb(21, 21, 21);
+}
+
+.delete{
+    font-size: calc(1.4vh + 2vw);
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.disabled{
+    pointer-events: none;
+    opacity: .4;
+}
+
+@media only screen and (max-width: 740px) {
+    .input__bg{
+        display: flex;
+    }
+
+    .before__start{
+        display: none;
+    }    
+}

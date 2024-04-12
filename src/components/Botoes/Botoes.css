@@ -1,0 +1,61 @@
+.botoes {
+    display: grid;
+    grid-auto-flow: column;
+    height: fit-content;
+    width: 50vw;
+    justify-content: center;
+    grid-gap: 2px;
+    margin-top: 30px;
+}
+
+.botao__novo_jogo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 12vw;
+}
+
+.menu__conteudo {
+    display: none;
+    position: absolute;
+    width: 10vw;
+
+    left: -.5%;
+    top: 107%;
+}
+
+.botao__criar {
+    display: block;
+    width: calc(6vh + 10vw);
+    text-align: start;
+}
+
+.show {
+    display: block;
+}
+
+.botoes__game {
+    display: flex;
+    justify-content: space-evenly;
+    grid-gap: 2px;
+}
+
+button,.botao__novo_jogo {
+    color: white;
+    font-size: calc(1vh + 1vw);
+    background-color: black;
+    border: 1px solid;   
+    border-color: white;
+    padding: calc(.5vh + .6vw);
+}
+
+button:hover,.botao__novo_jogo:hover {
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+.botoes__restart:disabled,.botoes__solve:disabled{
+    opacity: .4;
+    background-color: black;
+    cursor: default;
+}
